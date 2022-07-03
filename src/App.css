@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 100vh;
 }
 /*****************/
 .header,
@@ -19,7 +19,7 @@ body {
 .header {
   border: var(--main-color) 1px dashed;
   padding: 2px;
-  font-size: 1.5rem;
+  font-size: 4.5rem;
   text-align: center;
 }
 button {
@@ -28,17 +28,18 @@ button {
   background-color: var(--main-color);
   filter: drop-shadow(0px 0px 4px #1f1f1f);
   transition: 0.5s all;
+  font-size: 2rem;
 }
 button:hover{
  box-shadow:0px 0px 5px rgb(102, 98, 98) inset;
 }
 .result , .buttons{
-margin-left: 3px;
-width: 140px;
+margin-left: 36px;
+width: 350px;
 }
 .result {
-  height: 40px;
-  border: black 8px solid;
+  height: 100px;
+  border: black 15px solid;
   background-color: aliceblue;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -50,17 +51,17 @@ width: 140px;
   word-break: break-all;
 }
 .result .prev-operation{
-  font-size: .7rem;
-  color: #000;
+  font-size: 1.7rem;
+  color: rgb(83, 74, 74);
 }
 .result .curr-operation{
-  font-size: 1rem;
+  font-size: 2.6rem;
   color: var(--red-color);
 }
 .buttons {
   display: grid;
-  border: #333 8px solid;
-  height: 120px;
+  border: #333 15px solid;
+  height: 260px;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: auto;
   background-color: azure;
@@ -79,5 +80,4 @@ width: 140px;
 }
 .black{
   background-color: #B7CADB;
-  font-size: 1rem;
 }

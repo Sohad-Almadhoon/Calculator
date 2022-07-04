@@ -1,0 +1,83 @@
+:root {
+  --main-color: #fff;
+  --red-color:#bf0d0d;
+}
+html {
+  background:linear-gradient(to bottom , var(--red-color) , #333);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+/*****************/
+.header,
+.clear{
+  color: var(--main-color);
+}
+.header {
+  border: var(--main-color) 1px dashed;
+  padding: 2px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--main-color);
+  filter: drop-shadow(0px 0px 4px #1f1f1f);
+  transition: 0.5s all;
+}
+button:hover{
+ box-shadow:0px 0px 5px rgb(102, 98, 98) inset;
+}
+.result , .buttons{
+margin-left: 3px;
+width: 140px;
+}
+.result {
+  height: 40px;
+  border: black 8px solid;
+  background-color: aliceblue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.result .prev-operation{
+  font-size: .7rem;
+  color: #000;
+}
+.result .curr-operation{
+  font-size: 1rem;
+  color: var(--red-color);
+}
+.buttons {
+  display: grid;
+  border: #333 8px solid;
+  height: 120px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  background-color: azure;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.clear {
+  background-color: var(--red-color);
+}
+.span{
+  grid-column: span 2;
+}
+.red{
+  background:  var(--red-color);
+  color: var(--main-color);
+}
+.black{
+  background-color: #B7CADB;
+  font-size: 1rem;
+}

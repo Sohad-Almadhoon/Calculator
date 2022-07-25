@@ -20,6 +20,11 @@ function reducer(state, { type, payload }) {
         };
       }
       if (payload.digit === "0" && state.currOperand === "0") return state;
+      if (payload.digit === '.' && !state.currOperand)
+        return {
+          ...state,
+          currOperand: '0.',
+        };
       if (payload.digit === "." && state.currOperand.includes("."))
         return state;
       return {
@@ -79,6 +84,7 @@ function reducer(state, { type, payload }) {
         ...state,
         currOperand: state.currOperand.slice(0, -1),
       };
+      
     default:
       return state;
   }
